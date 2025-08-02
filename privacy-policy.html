@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming Post Automation Agent – Privacy Policy</title>
+</head>
+<body>
+    <h1>Gaming Post Automation Agent – Privacy Policy</h1>
+    <p><strong>Effective Date: 1 Aug 2025</strong></p>
+
+    <h2>Introduction</h2>
+    <p>
+        This Privacy Policy explains how the <strong>Gaming Post Automation Agent</strong> (the “Agent”) collects and uses information.
+        The Agent is a local automation script that fetches gaming-related news articles, uses generative AI to create captions and images, and
+        publishes posts on a connected Instagram professional account.  The Agent is operated solely by you for your own Instagram account and is
+        not provided to other users.
+    </p>
+    <p>
+        Meta requires developers to provide a publicly accessible privacy policy detailing what information is collected, how it is used, and how
+        users can request deletion.  This policy fulfils that requirement for the Agent.
+    </p>
+
+    <h2>Information Collected</h2>
+    <ul>
+        <li><strong>News content:</strong> The Agent retrieves news articles using a third‑party news API (e.g., GNews).  The script processes the article title, description and URL to generate captions and does not store the full article text.</li>
+        <li><strong>AI‑generated content:</strong> The Agent calls OpenAI’s API to generate captions and images.  It stores the generated caption and downloads the resulting image file locally.</li>
+        <li><strong>Instagram account details:</strong> During setup, you provide a long‑lived Instagram User Access Token and the Instagram Account ID.  The Agent uses these credentials to create media containers and publish posts via the Instagram Graph API.</li>
+    </ul>
+    <p>
+        The Agent does <strong>not</strong> collect personal data from other Instagram users.  It only interacts with your own professional account using credentials you supply.  The script does not collect names, email addresses or any sensitive personal information from end users.
+    </p>
+
+    <h2>How Information Is Used</h2>
+    <ol>
+        <li><strong>Content creation:</strong> News article metadata is summarised to draft an engaging caption using OpenAI’s language model.  An image prompt is generated and sent to OpenAI’s image generation API to create a relevant illustration.  The generated caption and image are then prepared for posting.</li>
+        <li><strong>Publishing posts:</strong> The Agent uses the Instagram Graph API to create a media container and publish the generated post to your Instagram professional account.</li>
+    </ol>
+    <p>
+        The Agent does not share your credentials, captions or images with any third party.  All API keys and tokens remain on your local machine and are used only to perform the tasks described.
+    </p>
+
+    <h2>Data Retention</h2>
+    <p>
+        The Agent stores generated captions and downloaded images locally until you choose to delete them.  It does not persistently store news articles or personal data.  You may delete the generated files at any time.
+    </p>
+
+    <h2>Data Deletion</h2>
+    <p>
+        Because the Agent operates locally and only uses data you provide, there is no external database to purge.  If you wish to remove generated content or revoke access:
+    </p>
+    <ul>
+        <li>Delete any caption or image files stored on your computer.</li>
+        <li>Remove your API keys and tokens from the script.</li>
+        <li>Revoke the Instagram User Access Token via the Meta app dashboard or by using the token revocation tools in Business Suite.</li>
+    </ul>
+
+    <h2>Third‑Party Services</h2>
+    <p>The Agent relies on the following services:</p>
+    <ul>
+        <li><strong>GNews (or similar news API):</strong> Provides current gaming news articles.  Review the service’s terms and privacy policy before use.</li>
+        <li><strong>OpenAI API:</strong> Generates captions and images.  Use of the API is subject to OpenAI’s Terms of Service and Privacy Policy.  Only prompts and generated content are sent to OpenAI; no personal user data is transmitted.</li>
+        <li><strong>Meta Instagram Graph API:</strong> Publishes posts to your Instagram professional account.  Data transmitted includes your access token, image URL and caption.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>
+        You are responsible for securing the API keys and access tokens used by the Agent.  Store these credentials in a secure manner and restrict access to the machine running the script.  Do not share your tokens publicly, as they provide access to your Instagram account and APIs.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+        As the operator of the Agent, you may update this policy to reflect changes in functionality or applicable laws.  Any updates should continue to explain what information is collected, how it is used and how it can be deleted, in accordance with Meta’s privacy policy expectations.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        If you have questions about this Privacy Policy or wish to request deletion of information associated with the Agent, please contact the operator of the Agent (i.e., you) via the email address associated with your Meta Developer account.
+    </p>
+</body>
+</html>
